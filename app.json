@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Test EAS update bug",
+    "slug": "test-eas-update-bug",
+    "version": "1.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "icon": "./assets/icon.png",
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0
+    },
+    "newArchEnabled": true,
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.testeas.bug",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.testeas.bug",
+      "versionCode": 10,
+      "permissions": [],
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#000000",
+          "imageWidth": 300
+        }
+      ]
+    ],
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
+  }
+}

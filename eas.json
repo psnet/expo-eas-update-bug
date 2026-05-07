@@ -1,0 +1,34 @@
+{
+  "cli": {
+    "version": ">= 18.8.1",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "distribution": "store",
+      "env": {},
+      "channel": "development",
+      "android": {
+        "autoIncrement": "versionCode",
+        "buildType": "apk"
+      },
+      "ios": {
+        "autoIncrement": "buildNumber"
+      }
+    },
+    "production": {
+      "distribution": "store",
+      "env": {},
+      "channel": "production",
+      "android": {
+        "autoIncrement": "versionCode"
+      },
+      "ios": {
+        "autoIncrement": "buildNumber"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
